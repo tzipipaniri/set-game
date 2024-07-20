@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Game</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/index.css" rel="stylesheet"></link>
+</head>
+<body>
+    <p id="header"><b>S E T</b></p>
+    <div id="images">
+         <img src="images/set_cards.png" alt="">
+        <img src="images/set_cards.png" alt="">
+    </div>
+   
+    <div id="buttons">
+         <button id="game" class="btn">כניסה למשחק</button>
+    <button id="rules" class="btn">הוראות המשחק</button>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="html/home.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+        <br>
+      <label for="uname"><b>שם</b></label>
+      <input type="text" placeholder="כתוב שם" name="uname" required>
+
+      
+      <button type="submit">הכנס למשחק</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#ffffff">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">בטל</button>
+      
+    </div>
+  </form>
+</div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

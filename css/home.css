@@ -1,0 +1,121 @@
+body {
+    overflow: hidden;
+    display: flex;
+    justify-items: baseline;
+    align-items: center;
+    /*grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 6fr;*/
+    /*grid-template-areas: "header aside " "main aside ";*/
+    margin: 5%;
+    background-image: url('../images/pine-wood-texture.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+button{
+  background-color: #3e8e41;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    font-size: x-large;
+    border-radius: 12px;
+    padding: 5px;
+}
+p{
+  font-size: x-large;
+  font-weight: 300;
+}
+#cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+   text-align: center;
+    align-items: center;
+    position: initial;
+    gap: 10px;   
+    width: 80%;
+}
+.card {
+    width: 10%;
+    height: 20%;
+    border: solid #93a6e2 1px;
+    border-radius: 10px 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img {
+    display: block;
+    padding: 1%;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+
+}
+  #dataPlay{
+    text-align: center;
+    position: inherit;
+    align-self: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    button{
+      width: 100px;
+      height: 50px;
+      font-size: medium;
+    }
+    .card{
+      width: 20%;
+      height: 15%;
+  }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    button{
+      width: 100px;
+      height: 50px;
+      font-size: large;
+    }
+    .card{
+        width: 20%;
+        height: 12%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    button{
+      width: 150px;
+      height: 75px;
+    }
+    .card{
+      width: 20%;
+      height: 10%;
+  }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    button{
+      width: 150px;
+      height: 75px;
+    }
+      
+.card{
+      width: 15%;
+  }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  .card{
+      width: 10%;
+  }
+}
